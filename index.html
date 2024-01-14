@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Uebsite për Piktura</title>
+		<link rel="stylesheet" type="text/css" href="Scripts/style.css">
+	</head>
+	<body>
+	<!--Pjesa kryesore Header-->
+		<div class="container">
+			<header id="ballina">
+			<table>
+				<tr>
+					<td>
+						<h1> <u> Uebsite për Piktura </u> </h1>  
+					</td> 
+					<td>
+						<!--Pjesa e SVG-->
+						<svg height=0% width=100%>
+						<circle cx="60" cy="60" r="50" stroke="black" stroke-width="3" fill="#9c6c43"/>
+						<text fill="black" font-size="35" x="35" y="70">UP</text>
+						</svg> 
+					</td> 
+				</tr>
+			</table>
+			</header>
+			<!--Pjesa e menyve-->
+			<nav>
+				<ul class="meny">
+					<li class="nav"><a href="#ballina"><h3>Ballina</h3></a>
+					<li class="nav"><a href="#PikturatNëShitje"><h3>Pikturat në shitje</h3></a>
+					<li class="nav"><a href="#BiografiaEPiktorëve"><h3>Biografia e piktorëve</h3></a>
+					<li class="nav"><a href="#kontakti"><h3>Kontakti</h3></a>
+				</ul>
+			</nav>
+			<!--Menuja e pare-->
+			<section id="PikturatNëShitje">
+				<div>
+					<table>
+						<tr>
+							<td>
+								<img src="Images/margaret1.png">
+								<p>Nga Magaret Keane <br> <b> çmimi <span style="color:red">250€</span> </b></p>
+								<img src="Images/margaret2.png">
+								<p>Nga Magaret Keane <br> <b> çmimi <span style="color:red">200€</span> </b></p>
+								<img src="Images/margaret3.png">
+								<p>Nga Magaret Keane <br> <b> çmimi <span style="color:red">150€</span> </b></p>
+							</td>
+							<td>
+								<img src="Images/albert1.png">
+								<p>Nga Albert Oelhen <br> <b> çmimi <span style="color:red">200€</span> </b></p>
+								<img src="Images/albert2.png">
+								<p>Nga Albert Oelhen <br> <b> çmimi <span style="color:red">210€</span> </b></p>	
+								<img src="Images/albert3.png">
+								<p>Nga Albert Oelhen <br> <b> çmimi <span style="color:red">240€</span> </b></p>						
+							</td>
+							<td>		
+								<img src="Images/lendita1.png">
+								<p>Nga Lendita Zeqiraj <br> <b> çmimi <span style="color:red">100€</span> </b></p>	
+								<img src="Images/lendita2.png">
+								<p>Nga Lendita Zeqiraj <br> <b> çmimi <span style="color:red">95€</span> </b></p>	
+								<img src="Images/lendita3.png">
+								<p>Nga Lendita Zeqiraj <br> <b> çmimi <span style="color:red">90€</span> </b></p>	
+							</td>	
+							<td>
+								<img src="Images/jean1.png">
+								<p>Nga Jean-Michel Basquiat <br> <b> çmimi <span style="color:red">190€</span> </b></p>	
+								<img src="Images/jean3.png">
+								<p>Nga Jean-Michel Basquiat <br> <b> çmimi <span style="color:red">215€</span> </b></p>									
+								<!--Pjesa e videos dhe Javascript-->
+								<div style="text-align:center">  
+								<video id="jean">
+								<source src="Video/jean.mp4" type="video/mp4">
+								</video>
+								<p id="jean">
+								</p>
+								</div> 
+								<script> 
+									var myVideo = document.getElementById("jean"); 
+									function playPause() { 
+									if (myVideo.paused) 
+										myVideo.play(); 
+									else 
+										myVideo.pause(); 
+									} 
+								</script> 
+								<button onclick="playPause()">Lëshoje (çmimi 210€)</button>	
+							</td>
+						</tr>
+					</table>
+				</div>	 
+			</section>
+			<!--Menuja e dyte-->
+			<section id="BiografiaEPiktorëve">
+				<div>
+					<table>
+						<tr>
+							<td style="width:50%">
+								<h3> <u> Margaret Keane</u></h3>
+								<p>Ditelindja: 15 shtator, Neshville SHBA</p>
+								<p>Llojet i pikturave:</p> 
+									<ul>
+										<li>Portrete</li> 
+										<li>Komedi</li> 
+										<li>Bashkëkohore</li>
+									</ul>
+								<iframe src="https://www.youtube.com/embed/5xav5_j9diY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+							</td>
+							<td style="width:50%">
+								<h3> <u> Albert Oelhen</u> </h3>
+								<p>Ditelindja: 17 shtator 1953, Krefeld Gjermani</p>
+								<p> Llojet i pikturave:</p>
+									<ul>
+										<li>Abstakte</li>
+										<li>Neo-ekspresionist</li>
+										<li>Bashkëkohore</li>
+									</ul>
+								<!--Video e marre nga Youtube-->
+								<iframe src="https://www.youtube.com/embed/PJq3nFP3gWs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+							</td>
+							<td>
+									<!--Lista e parenditur-->
+									<p><b>KRYEVEPRAT:</b></p> 
+									<p>Nga Keane: </p>
+									<ul>
+										<li>Gjithmonë</li> 
+										<li>Jetimi</li> 
+										<li>Pa qenë</li>
+										<li>Pritje </li>
+										<li>Harlequin</li>
+									</ul>
+									<p>Nga Oelhen:</p>
+									<ul>
+										<li>Pemëruar</li>
+										<li>Loa</li> 
+										<li>Kompjuteri</li> 
+										<li>Skulptura</li>
+										<li>Mëshira</li>
+									</ul>
+							</td>
+						</tr>
+						<tr>
+							<td style="width:50%">
+								<h3><u> Jean-Michel Basquiat</u></h3>
+								<p>Ditelindja: 22 dhjetor 1960, New York SHBA</p>
+								<p> Llojet i pikturave:</p>
+									<ul>
+										<li>Abstrakte</li>
+										<li>Neo-ekspresionist</li>
+										<li>Bashkëkohore</li>
+									</ul>
+								<audio controls>
+									<source src="Audio/michelle.mp3" type="audio/mpeg">
+								</audio>
+							</td>
+							<td style="width:50%">
+								<h3><u>Lendita Zeqiraj</u></h3>
+								<p>Ditelindja: 1972, Prishtinë Kosovë</p>
+								<p> Llojet i pikturave: </p>
+									<ul>
+										<li>Abstrakte</li>
+										<li>Bashkëkohore</li>
+										<li>Portrete</li>
+									</ul>
+								<iframe src="https://www.youtube.com/embed/t_Al-oIxYTs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+							</td>
+							<td>
+									<p>Nga Basquiat:</p>
+									<ul>
+										<li>Në italisht</li> 
+										<li>Kurora</li> 
+										<li>Koka</li>
+										<li>Trumpeta </li>
+										<li>Paemëruar</li>
+									</ul>
+									<p>Nga Zeqiraj:</p>
+									<ul>
+										<li>B13</li>
+										<li>Relaksim</li> 
+										<li>C27</li> 
+										<li>A6</li>
+										<li>Ballerina</li>
+									</ul>
+							</td>
+						</tr>
+					</table>
+				</div>
+			</section>
+			<!--Pjesa ku mund të kontaktojmë dhe të gjej lokacionin me anë te form dhe Google Maps-->
+			<section id="kontakti">
+				<table>
+					<tr>
+						<td style="width:50%">
+							<form action="#" method="post" style="margin-left:20%">
+								<h4 style="margin: 0px; width: 70%; height: 70%;"> Kontakti: </h4>
+								<hr>
+								  <input type="text" name="firstname" placeholder="Emri" style="margin: 0px; width: 70%; height: 70%;">
+								  <br>
+								 <br>
+								  <input type="text" name="lastname" placeholder="Mbiemri" style="margin: 0px; width: 70%; height: 70%;">
+								  <br><br>
+								  
+								  <textarea id="w3review" name="w3review" width="20%" height="60%" style="margin: 0px; width: 70%; height: 70%;">
+									Shkruaj mesazhin tënd
+									</textarea>
+									<br><br>
+								  <input type="submit" name="add" value="Dërgo">
+							</form>
+						</td>
+						<td>
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2943.237330375314!2d21.44918971483619!3d42.465240836446455!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13548d189e2b0acf%3A0x4b6d86f2fbc22ba0!2sN%C3%ABna%20Tereze%2C%20Gjilan!5e0!3m2!1sen!2s!4v1620600079299!5m2!1sen!2s" width=100% height=300; style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+						</td>
+						<td>
+						<p> <i> Për më shumë informacione, <br> keni adresën dhe mundësinë <br> për të dërguar mesazhe dhe sugjerime. </i></p>
+						</td>
+					</tr>
+				</table>
+			</section>
+			<footer>
+			<!--Te gjitha referencat ku janë përdorur linqet-->
+				<table>
+					<tr>
+						<td style="width:50%">
+							Copyright &#169  Uebsite për Piktura<br >
+							Referencat: <a href="https://www.keane-eyes.com/">Fotot1 </a> |
+							<a href="https://www.artsy.net/artist/jean-michel-basquiat/works-for-sale/">Fotot2 </a> | 
+							<a href="http://www.albanianarts.com/aart/artists_portfolio.php?id=0000000127/">Fotot3 </a> | 
+							<a href="https://www.artsy.net/artist/albert-oehlen/">Fotot4 </a> |
+							<a href="https://www.youtube.com/watch?v=UTxDD7t3mlg/">Audio </a> |
+							<a href="https://www.youtube.com/watch?v=mpblXeqk3DE/">Video1 </a> |
+							<a href="https://www.youtube.com/watch?v=5xav5_j9diY/"> Video2 </a> |
+							<a href="https://www.youtube.com/watch?v=PJq3nFP3gWs/">Video3 </a> |
+							<a href="https://www.youtube.com/watch?v=t_Al-oIxYTs/"> Video4 </a> |
+							<a href="https://en.wikipedia.org/wiki/Margaret_Keane/"> Biografia1 </a> |
+							<a href="https://en.wikipedia.org/wiki/Jean-Michel_Basquiat/"> Biografia2</a> |
+							<a href="https://en.wikipedia.org/wiki/Albert_Oehlen/"> Biografia3</a> |
+							<a href="https://www.imdb.com/name/nm5286380/"> Biografia4 </a> |
+							<a href="https://www.google.com/maps/place/N%C3%ABna+Tereze,+Gjilan/@42.465237,21.451378,16z/data=!4m5!3m4!1s0x13548d226b997d01:0x9d2771c3e">Lokacioni</a>
+						</td>
+					</tr>
+				</table>
+			</footer>
+		</div>
+	</body>
+</html>
